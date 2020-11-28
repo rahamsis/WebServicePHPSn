@@ -1,0 +1,265 @@
+.raiz {
+    width: 100%;
+    background-color: rgb(208, 208, 209);
+}
+
+.row-one,
+.row-two,
+.row-three {
+    display: flex;
+    padding: 10px;
+}
+
+.ingresos-gastos {
+    width: 65%;
+    height: 450px;
+    padding: 10px;
+    background: white;
+}
+
+.productos-mas-vendidos {
+    width: 35%;
+    height: 450px;
+    padding: 10px;
+    background-color: white;
+}
+
+.ventas,
+.ventas-anuladas,
+.compras,
+.gastos {
+    background: white;
+    width: 25%;
+    padding: 10px;
+}
+
+.cuentasporcobrar-pagar {
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+.productosporagotarse {
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+.content-row2 {
+    display: flex;
+}
+
+.titulo-row1,
+.titulo-row2 {
+    padding: 10px 0px;
+}
+
+.content-row2 .izquierda {
+    align-items: center;
+    display: flex;
+    width: 82%;
+}
+
+.content-row2 .derecha {
+    width: 18%;
+}
+
+.content-row2 .derecha img {
+    width: 100%;
+    max-width: 48px;
+    object-fit: cover;
+}
+
+.content-row2 .izquierda .izquierda1 {
+    width: 30%;
+    font-size: 2em;
+    color: rgb(27, 27, 26);
+    font-weight: bold;
+    text-align: center;
+}
+
+.content-row2 .izquierda .izquierda2 {
+    font-weight: bold;
+    width: 70%;
+    font-size: 1.2em;
+    color: rgb(7, 136, 196);
+}
+
+.subtitulo-row1 {
+    display: flex;
+}
+
+.center .center1 {
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(43, 43, 78);
+    padding: 0px 10px;
+}
+
+.center .center2 {
+    font-size: 0.7em;
+    color: rgb(145, 143, 143);
+}
+
+.right {
+    display: flex;
+}
+
+.titulo-row3 {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+
+/* .btnPrimary {
+    border: 0;
+    background: #1a76c2;
+    color: #ffffff;
+    height: 50px;
+    width: 80px;
+    outline: 0;
+} */
+
+.productos {
+    height: 90%;
+}
+
+.producto1,
+.producto2,
+.producto3,
+.producto4,
+.producto5 {
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.prd-left {
+    justify-content: center;
+    width: 30%;
+}
+
+.prd-right {
+    justify-content: center;
+    text-align: right;
+    width: 25%;
+}
+
+.prd-center {
+    width: 45%;
+}
+
+.center-nombre {
+    margin: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(44, 27, 102);
+    font-size: 0.9em;
+}
+
+.center-cantidad {
+    width: 63%;
+    background-color: rgb(245, 221, 177);
+    color: rgb(3, 71, 134);
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin: 5px;
+}
+
+.contenido-agotado {
+    width: 100%;
+    height: 21em;
+}
+
+.contenido-por-agotarse {
+    width: 100%;
+    height: 21em;
+}
+
+.contenido-agotado #td-uno,
+.contenido-por-agotarse #td-uno {
+    width: 80%;
+}
+
+.contenido-agotado #td-dos,
+.contenido-por-agotarse #td-dos {
+    width: 100%;
+    display: flex;
+}
+
+.contenido-agotado tr,
+.contenido-por-agotarse tr {
+    width: 100%;
+}
+
+.td-cantidadagotada {
+    display: inline-block;
+    width: auto;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: rgb(247, 201, 201);
+    color: rgb(211, 44, 44);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.td-cantidadporagotarse {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(250, 233, 160);
+    color: rgb(248, 208, 27);
+    font-weight: bold;
+    font-size: 0.9em;
+    -webkit-text-stroke: 0.25px rgb(163, 163, 158);
+}
+
+.contenido-agotado #td-uno #nombre,
+.contenido-por-agotarse #td-uno #nombre {
+    font-size: 1.3em;
+    color: rgb(11, 98, 164);
+}
+
+.contenido-agotado #td-uno #almacen,
+.contenido-por-agotarse #td-uno #almacen {
+    font-size: 0.9em;
+    color: rgb(173, 173, 170);
+}
+
+@media (max-width: 991px) {
+    .row-one,
+    .row-two,
+    .row-three {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ingresos-gastos {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .productos-mas-vendidos {
+        width: 100%;
+    }
+    .ventas,
+    .ventas-anuladas,
+    .compras,
+    .gastos {
+        width: 50%;
+    }
+    .cuentasporcobrar-pagar,
+    .productosporagotarse {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 660px) {
+    .ventas,
+    .ventas-anuladas,
+    .compras,
+    .gastos {
+        width: 100%;
+    }
+}
